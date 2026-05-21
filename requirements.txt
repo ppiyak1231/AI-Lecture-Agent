@@ -1,0 +1,11 @@
+streamlit>=1.30.0
+langchain-openai
+langchain-community
+langgraph
+python-pptx
+pillow
+faiss-cpu
+tiktoken
+tavily-python
+langchain-tavily
+openai
