@@ -3,6 +3,10 @@
 PPT 파일을 업로드하면 핵심 내용을 요약하고 강의 대본을 작성한 뒤, TTS(음성)와 결합해 동영상 강의로 만들어주는 AI 에이전트 서비스입니다.
 업로드한 PPT 내용을 바탕으로 질의응답을 수행하고, 필요시 실시간 웹 검색까지 알아서 수행하는 RAG 챗봇 기능도 포함되어 있습니다.
 
+## 배포
+
+https://ai-lecture-agent-zggvveffn5gcgt85kgo7xw.streamlit.app/
+
 ## 🚀 주요 기능
 
 * **강의 영상 자동 제작**: PPT 파싱 -> 내용 요약 -> 스크립트 작성 -> TTS 생성 -> 동영상 병합 과정을 자동으로 처리합니다.
@@ -67,12 +71,3 @@ uv venv
 uv pip install -r requirements.txt
 streamlit run app.py
 ```
-
-## ☁️ 배포 방법
-
-Streamlit Community Cloud를 사용하면 무료로 자동 배포가 가능합니다.
-
-1. `.venv/` 등의 파일을 제외하고 소스 코드를 GitHub에 Push합니다.
-2. [Streamlit Share](https://share.streamlit.io/)에 접속하여 GitHub 계정으로 로그인합니다.
-3. 대상 리포지토리와 메인 파일(`app.py`)을 선택하고 **Deploy**를 클릭합니다.
-* 루트에 있는 `packages.txt` 덕분에 서버 구동에 필요한 `ffmpeg`와 `libreoffice`는 자동으로 설치됩니다.
